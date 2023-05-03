@@ -22,7 +22,7 @@ https://73s2swxb4k.apifox.cn/doc-2200981
 
 (早苗的ob实现和标准略有不同，api多出了bot_qq字段，且没有echo)
 
-(nb和koishi似乎都需要实现echo，请使用obV2.py）
+(nb和koishi似乎都可以，请使用obV2.py）
 
 (trss-yunzai需要实现array格式上报，请使用obv3.py)
 
