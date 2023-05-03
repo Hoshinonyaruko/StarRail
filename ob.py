@@ -8,7 +8,7 @@ from typing import Any
 import base64
 
 ws_connections = {}
-ws_url_b = "ws://sanae.youngmoe.com:20005"
+ws_url_b = "ws://127.0.0.1:20004"
 
 async def main():
     app = web.Application()
@@ -274,6 +274,7 @@ async def send_to_ws_b(message):
             await ws_conn.send_str(json.dumps(message))
         except ConnectionResetError:
             await ws_conn.close()
+            print("重连")
             await _setup_b(bot_id)
             ws_conn = ws_connections["b"]
             await ws_conn.send_str(json.dumps(message))
