@@ -8,7 +8,7 @@ from typing import Any
 import base64
 
 ws_connections = {}
-ws_url_b = "ws://127.0.0.1:20004"
+ws_url_b = "ws://sanae.youngmoe.com:20005"
 
 async def main():
     app = web.Application()
@@ -95,7 +95,7 @@ async def call_api_from_dict(message):
 
         at_pattern = r'\[CQ:at,qq=(\d+)\]'
         local_image_pattern = r'\[CQ:image,file=file:///(.+)\]'
-        url_image_pattern = r'\[CQ:image,file=file:///http://(.+)\]'
+        url_image_pattern = r'\[CQ:image,file=http://(.+)\]'
         base64_image_pattern = r'\[CQ:image,file=base64://(.+)\]'
         base64_record_pattern = r'\[CQ:record,file=base64://(.+)\]'
 
