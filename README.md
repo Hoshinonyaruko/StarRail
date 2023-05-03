@@ -30,13 +30,13 @@ https://73s2swxb4k.apifox.cn/doc-2200981
 
 1，首先部署好opq，到opq群(位于搭建指南)获得token，留意群内bot的私聊
 
-2，python ob.py 运行adapter，缺少依赖就pip安装
-
-3，修改ob.py 将 ws_url_b = "ws://127.0.0.1:20004" 改为早苗服务器地址(obv2可以改为本地的nonebot、koishi地址)
+2，修改ob.py 将 ws_url_b = "ws://127.0.0.1:20004" 改为早苗服务器地址(obv2可以改为本地的nonebot、koishi地址)
 
 【公用sanae地址，ws://sanae.youngmoe.com:200xx】【xx替换成1-50】比如【ws://sanae.youngmoe.com:20005】
 
-4，OPQBot.exe -port 8086 -token 你的opqtoken -wsserver ws://127.0.0.1:30004/ws【ob里面默认是使用30004端口】
+3，python ob.py 运行adapter，缺少依赖就pip安装 pip install 缺少的依赖名
+
+4，OPQBot.exe -port 8086 -token 你的opqtoken -wsserver ws://127.0.0.1:30004/ws【ob里面默认是使用30004端口，这里对应】
 
 5，群里发 早苗on。应该可以用早苗了🍉
 
@@ -52,3 +52,4 @@ obv2（string格式上报，接收array格式调用）
 
 obv3（array格式上报，接收array格式调用）
 
+yunzai测试了，可以用，koishi也测了下，也能用
