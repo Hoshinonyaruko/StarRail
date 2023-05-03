@@ -18,11 +18,13 @@ opq搭建指南
 
 https://73s2swxb4k.apifox.cn/doc-2200981
 
-暂时只针对早苗进行了测试，对其他ob11应用端还要再进行一些测试(早苗的ob实现和标准略有不同，api多出了bot_qq字段，且没有echo)
+暂时只针对早苗进行了测试，对其他ob11应用端还要再进行一些测试
 
-(nb和koishi似乎都需要实现echo，请等待obV2.py）（还没写）
+(早苗的ob实现和标准略有不同，api多出了bot_qq字段，且没有echo)
 
-(trss-yunzai需要实现array格式上报，请使用obv3.py)（还没写）
+(nb和koishi似乎都需要实现echo，请使用obV2.py）
+
+(trss-yunzai需要实现array格式上报，请使用obv3.py)
 
 接入早苗的指南，
 
@@ -41,3 +43,12 @@ https://73s2swxb4k.apifox.cn/doc-2200981
 https://www.yuque.com/km57bt/hlhnxg
 
 早苗的文档地址↑
+
+3个版本具体区别，
+
+ob（string格式上报，接受string格式调用）
+
+obv2（string格式上报，接收array格式调用）
+
+obv3（array格式上报，接收array格式调用）
+
