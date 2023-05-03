@@ -274,8 +274,7 @@ async def send_to_ws_b(message):
             await ws_conn.send_str(json.dumps(message))
         except ConnectionResetError:
             await ws_conn.close()
-            async with aiohttp.ClientSession() as session:
-                await _setup_b(bot_id)
+            await _setup_b(bot_id)
             ws_conn = ws_connections["b"]
             await ws_conn.send_str(json.dumps(message))
 
