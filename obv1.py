@@ -157,6 +157,7 @@ async def call_api_from_dict(message):
         content = re.sub(at_pattern, '', params['message'])
         content = re.sub(local_image_pattern, '', content)
         content = re.sub(url_image_pattern, '', content).strip()
+        content = re.sub(base64_image_pattern, '', content).strip()
         content = re.sub(base64_record_pattern, '', content).strip()
 
         to_type = 1 if action == 'send_private_msg' else 2 if action == 'send_group_msg' else None
